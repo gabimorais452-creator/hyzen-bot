@@ -23,7 +23,7 @@ def keep_alive():
 
 # --- CONFIGURAÇÕES ---
 # O token agora é lido de forma segura pela variável de ambiente do Render (DISCORD_TOKEN)
-TOKEN = os.getenv("DISCORD_TOKEN")
+TOKEN = os.getenv("MTU3MjcxMzE1Nzk3NjQwMDAxMg.GY47Xt.-NieyQs36vVf_mQ1-WO0Z8oy1k5Mz-PyxPOHSE")
 ID_CARGO_ENTRADA = 1557488617407127604  # Cargo dado ao entrar
 ID_CARGO_STAFF = 1557488577372364892    # Cargo de Staff com acesso aos comandos
 
