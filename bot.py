@@ -3,6 +3,7 @@ from discord.ext import commands
 from discord.ui import View, Select, Button, Modal, TextInput
 import asyncio
 import random
+import os
 from flask import Flask
 from threading import Thread
 
@@ -21,7 +22,8 @@ def keep_alive():
     t.start()
 
 # --- CONFIGURAÇÕES ---
-TOKEN = "MTU3MjcxMzE1Nzk3NjQwMDAxMg.GY47Xt.-NieyQs36vVf_mQ1-WO0Z8oy1k5Mz-PyxPOHSE"
+# O token agora é lido de forma segura pela variável de ambiente do Render (DISCORD_TOKEN)
+TOKEN = os.getenv("DISCORD_TOKEN")
 ID_CARGO_ENTRADA = 1557488617407127604  # Cargo dado ao entrar
 ID_CARGO_STAFF = 1557488577372364892    # Cargo de Staff com acesso aos comandos
 
